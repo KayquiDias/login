@@ -44,7 +44,7 @@ main{
 section{
     position: absolute;
     width: 60vw;
-    min-height: 350px;
+    min-height: 450px;
     max-height: 60vh;
     background-color: white;
     top: 50%;
