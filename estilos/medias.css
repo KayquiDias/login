@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #EF6F6C;
+    --cor1: #323031;
+    --cor2: #3D3B3C;
+    --cor3: #5F5B6B;
+    --cor4: #A9B18F;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main{
+        background-image: linear-gradient(45deg, #323031, #A9B18F);
+    }
+    section{
+        width: 60vw;
+        height: 350px;
+}
+    section #img{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+    section #login{
+        float: right;
+        width: 70%;
+    }
+}
+@media screen and (min-width: 992px){
+    main{
+        background-image: linear-gradient(45deg, #A9B18F, #5F5B6B);
+    }
+    section{
+        max-width: 1000px;
+        height: 350px;
+}
+    section #img{
+        float: right;
+        width: 30%;
+        height: 100%;
+    }
+    section #login{
+        float: left;
+        width: 70%;
+    }
+    #login > h1{
+        font-size: 2em;
+    }
+    #login > p{
+        font-size: 1.2em;
+    }
+}

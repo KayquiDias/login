@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* 
+    vermelho - cor0 - EF6F6C
+    preto+ - cor1 - 323031
+    preto- -cor2 - 3D3B3C
+    azul piano - cor3 - 5F5B6B
+    verde claro - cor4 - A9B18F
+*/
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+:root{
+    --cor0: #EF6F6C;
+    --cor1: #323031;
+    --cor2: #3D3B3C;
+    --cor3: #5F5B6B;
+    --cor4: #A9B18F;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+main{
+    background-color: var(--cor0);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section{
+    position: absolute;
+    width: 60vw;
+    min-height: 350px;
+    max-height: 60vh;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;    
+}
+section  p{
+    padding: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+#img{
+    background: black url(../img_login.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100px;
+    display: block;
+}
+#login{
+    display: block;
+}
+#login{
+    text-align: center;
+
+}
+.text{
+    transform: translateX(3px);
+}
+#enviar{
+    margin: 10px 0 0 0;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+#enviar:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+.campo{
+    text-align: center;
+}
+.campo > span{
+    transform: translateY(8px);
+}
+#icone_unico{
+    transform: translate(4px, 8px);
+}
+section a{
+    color: var(--cor0);
+    text-decoration: none;
+}
+section a:hover{
+    color: var(--cor3);
+}
